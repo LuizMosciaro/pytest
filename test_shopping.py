@@ -32,3 +32,9 @@ def test_can_get_total_price(cart):
 
     price_map = {'Apple':1.50,'Banana':2.00}
     assert cart.get_total_price(price_map) == 3.50
+
+def test_can_list_all_items(cart):
+    cart.add("A")
+    cart.add("B")
+    cart.add("C")
+    assert ['A','B','C'] == cart.get_items()
