@@ -21,6 +21,3 @@ class ShoppingCart:
         for item in self.items:
             total_price += price_map.get(item)
         return total_price
-
-#if __name__=='__main__':
-#    price_map = {'Apple':1.50,'Banana':2.00}
